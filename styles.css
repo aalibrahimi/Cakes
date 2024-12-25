@@ -1,0 +1,125 @@
+body {
+    background-color: pink;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+    
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 50px; /* Spacing between links */
+    position: absolute; /* Required for centering using top/left */
+    top: 5%; /* Move down to 50% of the viewport height */
+    left: 50%; /* Move right to 50% of the viewport width */
+    transform: translate(-50%, -50%); /* Offset by half the width and height to center */
+    padding: 0;
+    margin: 0;
+  }
+  
+
+.nav-links li{
+    display: inline;
+    
+
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: rgb(240, 14, 240);
+    
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(244, 50, 82);
+}
+
+/* imaage sections */
+.image-grid {
+
+    display: grid;
+    /* grid-template-columns: repeat(4,300px); */
+    grid-template-columns: repeat(auto-fit, minmax(400px,400px));
+    /* padding-bottom: 200px; */
+    /* padding-left: 40px;
+    padding-right: 50px; */
+    padding: 80px 20px 100px 80px;
+    /* grid-template-rows: 150px 200px; */
+    margin-right: 50px ;
+    margin-left: 50;
+    gap: 20px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease-in-out;
+    transform: scale(1);                                    /* able to scale opacity, and scaling the size of the image */
+    /* background-color: black; */
+}
+
+.image-grid img {
+    width: 250px; /* Set a fixed width ||  The height: 200px combined with object-fit: cover is causing the images to maintain their aspect ratio while filling a 200px height container. */
+    height: 250px;/* Set a fixed height */
+    padding-right: 5px;
+    padding-bottom: 8px;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+    object-fit: cover; /* this is op, it makes the image good quality changes the scene a bit */
+    border-radius: 30px;
+}
+
+.image-grid p {
+    
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    color: var(--color);
+    
+
+}
+.image-grid img:hover {
+    transform: scale(1.1);
+    /* border-radius: 0; */
+    
+    
+    /* width: 280px;
+    height: 280px; */
+    /* transition-delay: 5; */
+    /* content: url('./pics/blossom.jpg'); */
+} 
+/* These are all the individiual Photos for slide show presentations -------------------------------------------------------------------------------------------------------------------------------- */
+
+img[src='./pics/blossom.jpg']:hover {  /* blossom => anime girl*/
+
+    content: url('./pics/animegirl.jpg');
+}
+img[src='./pics/animegirl.jpg']:hover {     /* animegirl => long*/
+    content: url('./pics/long.jpg');
+}
+img[src='./pics/bunny.jpg']:hover{ 
+    content: url('./pics/stretch.jpg')       /* bunny => stretch*/
+}
+img[src='./pics/stretch.jpg']:hover {
+    content: url('./pics/bunny.jpg');       /* stretch => bunny*/
+}
+img[src='./pics/long.jpg']:hover{
+    content: url('./pics/stretch.jpg');     /* long => stretch*/
+}
