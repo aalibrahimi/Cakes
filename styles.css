@@ -15,6 +15,8 @@ body, html {
     align-items: center;
     padding: 10px 20px;
     color: #fff;
+    background-color: #fcc7eb;;
+    height: 100px;
     
 }
 
@@ -35,6 +37,7 @@ body, html {
     transform: translate(-50%, -50%); /* Offset by half the width and height to center */
     padding: 0;
     margin: 0;
+   
   }
   
 
@@ -46,7 +49,7 @@ body, html {
 
 .nav-links a{
     text-decoration: none;
-    color: rgb(240, 14, 240);
+    color: rgb(255, 55, 85);
     
     transition: color 0.3s;
 }
@@ -159,6 +162,8 @@ footer {
     border-top: 4px solid #ffb6c1; /* Light border for decoration */
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
     border-radius: 10px 10px 0 0; /* Rounded top corners */
+    /* overflow-x: hidden; */
+    box-sizing: border-box;
 }
 
 footer p {
@@ -188,4 +193,30 @@ footer img {
     background: #fff; /* Add background for contrast */
     padding: 5px; /* Padding for the circular icon */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.page-numbers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+:where(#one, #two, #next) {
+    /* border-radius: 0%; */
+    /* background-color: rgb(253, 228, 228); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+
+}
+:where(#one, #two, #next):hover {
+    background-color: var(--cottonB);
+}
+.page-numbers #one, #two {
+    display: absolute;
+    padding: 0px 4px 0px 4px;
+    margin: 0;
+    gap: 0;
 }
