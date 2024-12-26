@@ -11,32 +11,29 @@ body, html {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center; /* Space between logo and nav links */
+    align-items: center; /* Center items vertically */
     padding: 10px 20px;
     color: #fff;
-    background-color: #fcc7eb;;
-    height: 100px;
-    
+    background-color: #fcc7eb;
+    height: 70px;
+    display: flex;
 }
+
 
 .nav-logo {
     font-size: 1.5em;
     font-weight: bold;
+    top: 0;
 }
 
-.nav-links {
+.navbar .nav-links {
     list-style: none;
     display: flex; /* Flexbox for horizontal alignment */
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
     gap: 50px; /* Spacing between links */
-    position: absolute; /* Required for centering using top/left */
-    top: 5%; /* Move down to 50% of the viewport height */
-    left: 50%; /* Move right to 50% of the viewport width */
-    transform: translate(-50%, -50%); /* Offset by half the width and height to center */
-    padding: 0;
-    margin: 0;
+    font-size: 1.2rem;
    
   }
   
@@ -212,7 +209,7 @@ footer img {
 
 }
 :where(#one, #two, #next):hover {
-    background-color: var(--cottonB);
+    background-color:rgb(162, 216, 254);
 }
 .page-numbers #one, #two {
     display: absolute;
