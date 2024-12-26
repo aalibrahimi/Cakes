@@ -1,5 +1,12 @@
-body {
+:root{
+    --cottonB: rgb(133, 190, 240);
+    --pink: pink; /* Hot Pink */
+}
+body, html {
     background-color: pink;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 .navbar {
@@ -91,35 +98,94 @@ body {
     flex-direction: column;
     align-items: center;
     font-size: 16px;
-    color: var(--color);
+    color: rgb(0, 0, 0);
     
 
 }
 .image-grid img:hover {
     transform: scale(1.1);
-    /* border-radius: 0; */
-    
-    
-    /* width: 280px;
-    height: 280px; */
-    /* transition-delay: 5; */
-    /* content: url('./pics/blossom.jpg'); */
 } 
 /* These are all the individiual Photos for slide show presentations -------------------------------------------------------------------------------------------------------------------------------- */
+/* 
+img[src='./pics/blossom.jpg']:hover {  
 
-img[src='./pics/blossom.jpg']:hover {  /* blossom => anime girl*/
-
-    content: url('./pics/animegirl.jpg');
+    content: url('./pics/oreo.jpg');
 }
-img[src='./pics/animegirl.jpg']:hover {     /* animegirl => long*/
+img[src='./pics/oreo.jpg']:hover {    
     content: url('./pics/long.jpg');
 }
-img[src='./pics/bunny.jpg']:hover{ 
-    content: url('./pics/stretch.jpg')       /* bunny => stretch*/
+img[src='./pics/strawberry.jpg']:hover{ 
+    content: url('./pics/pink.jpeg')       
 }
 img[src='./pics/stretch.jpg']:hover {
-    content: url('./pics/bunny.jpg');       /* stretch => bunny*/
+    content: url('./pics/strawberry.jpg');       
 }
 img[src='./pics/long.jpg']:hover{
-    content: url('./pics/stretch.jpg');     /* long => stretch*/
+    content: url('./pics/pink.jpeg');     
+} */
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar {
+    background: none;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--cottonB);
+    border-radius: 40px;
+    margin-right: 20px;
+    
+    
+    
+}
+
+::selection {
+    background-color: none;
+    color:  var(--cottonB);
+}
+
+footer {
+    background-color: #ffe6f7; /* Soft pastel pink */
+    margin: 0;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 4px solid #ffb6c1; /* Light border for decoration */
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+footer p {
+    color: #555; /* Softer text color */
+    margin: 5px 0;
+    font-size: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Playful font */
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff69b4; /* Hot pink link */
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer a:hover {
+    color: #ff1493; /* Darker pink on hover */
+    text-decoration: underline;
+}
+
+footer img {
+    width: 50px; /* Cute icon size */
+    height: auto;
+    margin-top: 10px;
+    border-radius: 50%; /* Make it circular */
+    background: #fff; /* Add background for contrast */
+    padding: 5px; /* Padding for the circular icon */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
