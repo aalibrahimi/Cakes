@@ -9,51 +9,7 @@ body, html {
     width: 100%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: center; /* Space between logo and nav links */
-    align-items: center; /* Center items vertically */
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #fcc7eb;
-    height: 70px;
-    display: flex;
-}
 
-
-.nav-logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    top: 0;
-}
-
-.navbar .nav-links {
-    list-style: none;
-    display: flex; /* Flexbox for horizontal alignment */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 50px; /* Spacing between links */
-    font-size: 1.2rem;
-   
-  }
-  
-
-.nav-links li{
-    display: inline;
-    
-
-}
-
-.nav-links a{
-    text-decoration: none;
-    color: rgb(255, 55, 85);
-    
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: rgb(244, 50, 82);
-}
 
 /* imaage sections */
 .image-grid {
