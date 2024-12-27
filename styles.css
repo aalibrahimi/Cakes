@@ -173,3 +173,44 @@ footer img {
     margin: 0;
     gap: 0;
 }
+
+
+/* lol */
+.cake-categories {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cake-section {
+    margin-bottom: 40px;
+}
+
+.cake-section h2 {
+    font-family: 'Pacifico', cursive;
+    color: #ff4974;
+    margin-bottom: 10px;
+}
+
+.cake-section .price {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.image-grid img {
+    width: calc(33.333% - 14px);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
