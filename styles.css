@@ -206,11 +206,12 @@ footer img {
 }
 
 .image-grid img {
-    width: 100%; /* Full width on mobile */
+    width: cal(100%-10px); /* Full width on mobile */
     border-radius: 10px;
     transition: transform 0.3s ease;
     object-fit: cover; /* Maintains aspect ratio */
-    height: 350px; /* Fixed height for consistency */
+    height: 250px; /* Fixed height for consistency */
+    margin: 5px;
 }
 .image-grid img:hover {
     transform: scale(1.05);
@@ -220,7 +221,7 @@ footer img {
 @media screen and (min-width: 768px) {
     .image-grid img {
         width: calc(33.333% - 10px); /* 3 images per row on larger screens */
-        height: 300px;
+        height: 200px;
     }
 }
 
