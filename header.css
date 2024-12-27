@@ -1,9 +1,9 @@
 :root{
     --cottonB: rgb(133, 190, 240);
-    --pink: pink; /* Hot Pink */
+    --pink: rgb(249, 201, 209); /* Hot Pink */
 }
 body, html {
-    background-color: pink;
+    background-color: rgb(244, 203, 210);
     margin: 0;
     padding: 0;
     width: 100%;
